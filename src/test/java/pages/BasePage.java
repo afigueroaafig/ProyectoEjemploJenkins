@@ -13,8 +13,13 @@ import org.openqa.selenium.support.ui.Select;
 public class BasePage {
     protected static WebDriver driver;
     private static WebDriverWait wait;
+    
+    
 
 static{
+
+    System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
+    //System.setProperty("webdriver.chrome.driver","C:\\Users\\Home\\eclipse-workspace\\ProyectoEjemploJenkins2\\driver\\chromedriver.exe");
     ChromeOptions chromeOptions = new ChromeOptions();
     driver = new ChromeDriver(chromeOptions);
     wait = new WebDriverWait(driver, Duration.ofSeconds(10));
