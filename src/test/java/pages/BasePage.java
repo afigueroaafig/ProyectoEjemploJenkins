@@ -36,7 +36,7 @@ public static void navigateTo(String url){
 
 public void salirPagina (){
     driver.quit();
-    }        
+    }         
 
 private WebElement find(String locator){
     return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
@@ -60,5 +60,7 @@ public void selectFromDropdownByIndex(String locator, int valueToSelect){
     Select dropdown = new Select (find(locator));
     dropdown.selectByIndex(0);
 }
+
+
 
 }
