@@ -2,6 +2,7 @@ package pages;
 
 import java.time.Duration;
 
+import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -17,7 +18,6 @@ public class BasePage {
     
 
 static{
-
 
     System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe"); 
     //System.setProperty("webdriver.chrome.driver","C:\\Users\\Home\\eclipse-workspace\\ProyectoEjemploJenkins2\\driver\\chromedriver.exe");
@@ -65,6 +65,9 @@ public void selectFromDropdownByIndex(String locator, int valueToSelect){
     dropdown.selectByIndex(0);
 }
 
+public String textFromElement(String locator){
+    return find(locator).getText();
 
+}
 
 }

@@ -6,6 +6,7 @@ public class GooglePage extends BasePage{
     
     private String campoTexto = "//textarea[@id='APjFqb']";
     private String url = "https://www.google.com";
+    private String firstResult = "//*[@id=\"APjFqb\"]";
 
     public GooglePage(){
     super(driver);
@@ -19,8 +20,9 @@ public class GooglePage extends BasePage{
     public void ingresarTexto(String textoBuscado){
     ingresarBusqueda(campoTexto, textoBuscado);
     }
-
-
+    public String firstResult(){
+    return  textFromElement(firstResult);
+    }
    
 
 }
