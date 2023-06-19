@@ -18,7 +18,7 @@ public class BasePage {
 
 static{
 
-    System.setProperty("webdriver.chrome.driver","C:\ProgramData\Jenkins\.jenkins\workspace\SeleniumGoogle2\chromedriver.exe");
+    System.setProperty("webdriver.chrome.driver","C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\SeleniumGoogle2\\chromedriver.exe");
     ChromeOptions chromeOptions = new ChromeOptions();
     driver = new ChromeDriver(chromeOptions);
     wait = new WebDriverWait(driver, Duration.ofSeconds(10));
