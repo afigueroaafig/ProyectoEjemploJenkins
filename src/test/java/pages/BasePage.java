@@ -19,7 +19,7 @@ public class BasePage {
 static{
 
 
-    System.setProperty("webdriver.chrome.driver","./ProyectoEjemploJenkins2/chromedriver.exe"); 
+    System.setProperty("webdriver.chrome.driver","./chromedriver.exe"); 
     //System.setProperty("webdriver.chrome.driver","C:\\Users\\Home\\eclipse-workspace\\ProyectoEjemploJenkins2\\driver\\chromedriver.exe");
     //System.setProperty("webdriver.chrome.driver","C:\\selenium_webdriver\\chromedriver.exe");
     //System.setProperty("webdriver.chrome.driver","C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\SeleniumGoogle2\\chromedriver.exe");
