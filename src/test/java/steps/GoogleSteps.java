@@ -30,7 +30,7 @@ GooglePage google = new GooglePage();
 
     @Then("^muestra resultado$")
     public void vvalidateResults(){
-         Assert.assertEquals("Selenium", google.firstResult());
+         Assert.assertEquals("SeleniumAAA", google.firstResult());
          google.salirPagina();
     }
    
