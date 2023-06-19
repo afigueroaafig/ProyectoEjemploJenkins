@@ -18,9 +18,13 @@ public class BasePage {
 
 static{
 
+<<<<<<< HEAD
     //System.setProperty("webdriver.chrome.driver","./ProyectoEjemploJenkins2/chromedriver.exe"); 
     System.setProperty("webdriver.chrome.driver","C:\\Users\\Home\\eclipse-workspace\\ProyectoEjemploJenkins2\\driver\\chromedriver.exe");
     //System.setProperty("webdriver.chrome.driver","C:\\selenium_webdriver\\chromedriver.exe");
+=======
+    System.setProperty("webdriver.chrome.driver","C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\SeleniumGoogle2\\chromedriver.exe");
+>>>>>>> b482d104dfae12a16b059dda63ac7813ff2fc540
     ChromeOptions chromeOptions = new ChromeOptions();
     driver = new ChromeDriver(chromeOptions);
     wait = new WebDriverWait(driver, Duration.ofSeconds(10));
