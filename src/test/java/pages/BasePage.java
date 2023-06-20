@@ -2,7 +2,7 @@ package pages;
 
 import java.time.Duration;
 
-import org.junit.Assert;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,8 +14,6 @@ import org.openqa.selenium.support.ui.Select;
 public class BasePage {
     protected static WebDriver driver;
     private static WebDriverWait wait;
-    
-    
 
 static{
 
@@ -36,9 +34,10 @@ public BasePage(WebDriver driver){
 
 public static void navigateTo(String url){
     driver.get(url);
+    driver.manage().window().maximize();
     }
 
-public void salirPagina (){
+public static void closeBrowser(){
     driver.quit();
     }         
 
@@ -67,7 +66,8 @@ public void selectFromDropdownByIndex(String locator, int valueToSelect){
 
 public String textFromElement(String locator){
     return find(locator).getText();
-
 }
+
+
 
 }

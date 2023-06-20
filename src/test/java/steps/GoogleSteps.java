@@ -29,9 +29,8 @@ GooglePage google = new GooglePage();
     }
 
     @Then("^muestra resultado$")
-    public void vvalidateResults(){
+    public void validateResults(){
          Assert.assertEquals("Selenium", google.firstResult());
-         google.salirPagina();
     }
    
 

@@ -1,6 +1,7 @@
+@Grid 
 Feature: Probar la busqueda en google
 
-@Test
+@Test 
 Scenario: Busco algo en google
     Given abrir pagina de google
     When escribir algo en el buscador
