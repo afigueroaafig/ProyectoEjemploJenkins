@@ -18,7 +18,7 @@ OpenWebinarsPage OpenWebinars = new OpenWebinarsPage();
 
     @Then("^validar titulo de pagina$")
     public void validateResults(){
-         Assert.assertEquals("Cursos online de Programaci\u00F3n y Sistemas en v\u00EDdeo | OpenWebinarsAAA", OpenWebinars.titleResult());
+         Assert.assertEquals("Cursos online de Programaci\u00F3n y Sistemas en v\u00EDdeo | OpenWebinars", OpenWebinars.titleResult());
     }
 
 
