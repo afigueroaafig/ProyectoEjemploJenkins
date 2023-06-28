@@ -32,11 +32,11 @@ static{
     //FirefoxOptions fireFoxOptions = new FirefoxOptions();
     //driver = new FirefoxDriver(fireFoxOptions);
 
-    EdgeOptions edgeOptions = new EdgeOptions();
-    driver = new EdgeDriver(edgeOptions);
+    //EdgeOptions edgeOptions = new EdgeOptions();
+    //driver = new EdgeDriver(edgeOptions);
 
-    //ChromeOptions chromeOptions = new ChromeOptions();
-    //driver = new ChromeDriver(chromeOptions);
+    ChromeOptions chromeOptions = new ChromeOptions();
+    driver = new ChromeDriver(chromeOptions);
 
 
     wait = new WebDriverWait(driver, Duration.ofSeconds(10));
