@@ -11,4 +11,4 @@ Scenario Outline: Busco algo en google
     Examples:
         | textoBuscado | resultadoEsperado |
         | selenium     | selenium          | 
-        | cucumber     | OtraCosa....      | 
+        | cucumber     | cucumber          | 
