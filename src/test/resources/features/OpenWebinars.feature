@@ -7,7 +7,7 @@ Scenario: Entrar a paginas del menu principal
     When presionar el boton carrera del menu
     Then mostrar pagina de carrera
 
-@Test
+@Smoke
 Scenario: Verificar titulo de HomePage
     Given abrir pagina de openwebinars para validar titulo
     Then validar titulo de pagina
